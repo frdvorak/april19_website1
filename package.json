@@ -18,5 +18,6 @@
   "homepage": "https://github.com/frdvorak/april19_website1#readme",
   "devDependencies": {
     "node-sass": "^4.11.0"
-  }
+  },
+  "dependencies": {}
 }
