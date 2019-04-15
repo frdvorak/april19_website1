@@ -1,5 +1,14 @@
 /*
 clip path shapes: https://bennettfeely.com/clippy/
+
+7-1 pattern
+base/
+components/
+layout/
+pages/
+themes/
+abstracts/
+vendors/
 */
 @import "abstracts/functions";
 @import "abstracts/mixins";
@@ -13,5 +22,6 @@ clip path shapes: https://bennettfeely.com/clippy/
 @import "components/button";
 
 @import "layout/header";
+@import "layout/grid";
 
 @import "pages/home";
