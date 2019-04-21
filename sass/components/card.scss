@@ -1,4 +1,6 @@
 .card {
+
+    // FUNCTIONALITY
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
@@ -16,13 +18,14 @@
         backface-visibility: hidden;
         border-radius: 3px;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        overflow: hidden;
 
         &--front {
             background-color: $color-white;
         }
 
         &--back {
-
+            transform: rotateY(180deg);
 
             &-1 {
                 background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
@@ -38,7 +41,30 @@
         }
     }
 
-    &:hover &__side {
-        transform: rotateY(180deg);
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+    // FRONT SIDE STYLING
+    &__picture {
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url('../img/nat-5.jpg')
+        }
+
+        &--2 {
+            background-image: url('../img/nat-5.jpg')
+        }
+
+        &--3 {
+            background-image: url('../img/nat-5.jpg')
+        }
     }
 }
