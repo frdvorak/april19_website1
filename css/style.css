@@ -208,6 +208,7 @@ body {
   animation-fill-mode: backwards; }
 
 .btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
   color: #55c57a;
   display: inline-block;
   text-decoration: none;
@@ -347,7 +348,8 @@ body {
   padding: 6rem;
   padding-left: 9rem;
   font-size: 1.6rem;
-  transform: skewX(-12deg); }
+  transform: skewX(-12deg);
+  backface-visibility: hidden; }
   .story > * {
     transform: skewX(12deg); }
   .story__shape {
@@ -383,7 +385,8 @@ body {
     opacity: 1;
     transform: translate(-50%, -50%); }
   .story:hover .story__img {
-    transform: translateX(-4rem) scale(1); }
+    transform: translateX(-4rem) scale(1);
+    filter: blur(3px) brightness(80%); }
 
 .header {
   height: 95vh;
