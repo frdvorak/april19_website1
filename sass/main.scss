@@ -13,6 +13,7 @@ vendors/
 https://css-tricks.com/snippets/html/glyphs/
 http://linea.io/
 https://unsplash.com/
+https://coverr.co/ - stock videos
 */
 @import "abstracts/functions";
 @import "abstracts/mixins";
@@ -28,6 +29,7 @@ https://unsplash.com/
 @import "components/card";
 @import "components/feature-box";
 @import "components/story";
+@import "components/bg-video";
 
 @import "layout/header";
 @import "layout/grid";
