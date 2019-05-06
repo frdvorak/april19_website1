@@ -14,6 +14,10 @@ https://css-tricks.com/snippets/html/glyphs/
 http://linea.io/
 https://unsplash.com/
 https://coverr.co/ - stock videos
+
+HTML special symbols:
+&nbsp; - empty space
+&copy; - copyright
 */
 @import "abstracts/functions";
 @import "abstracts/mixins";
@@ -32,6 +36,7 @@ https://coverr.co/ - stock videos
 @import "components/bg-video";
 @import "components/form";
 
+@import "layout/navigation";
 @import "layout/header";
 @import "layout/grid";
 @import "layout/footer";
