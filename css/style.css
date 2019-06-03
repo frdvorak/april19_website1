@@ -19,6 +19,22 @@ HTML special symbols (HTML entities):
 &nbsp; - empty space, &times; - X,
 &copy; - copyright
 */
+/*
+desktop first approach
+0-600px     phone
+600-900px   tablet portrait
+900-1200px  tablet landscape
+1200px - 1800px -- normal styles apply --
+1800px + :  big desktop
+ 
+$breakpoint argument options:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+media queries are not affected by base font size so we don't use rems
+1em =  16px 
+**/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -56,6 +72,15 @@ HTML special symbols (HTML entities):
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
