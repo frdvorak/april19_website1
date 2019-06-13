@@ -27,4 +27,9 @@ body {
     @include respond(tab-port) { // width < 600 
         padding: 0rem;
     }
-} 
+}
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
+}
